@@ -1,37 +1,37 @@
 # WingetManager
 
-Questa è una classe Python che contiene metodi per lavorare con il programma Windows Package Manager (winget).
+This is a Python class that contains methods for working with the Windows Package Manager (winget) program.
 
-### Installazione
-Usa il seguente codice per installare WingetManager:
+### Installation.
+Use the following code to install WingetManager:
 
 ```
 pip install winget-manager
 ```
 
-### Metodi
-`install()`: Installa il pacchetto specificato utilizzando winget.  
-`search()`: Esegue una ricerca del pacchetto specificato utilizzando winget e restituisce l'output come una stringa.  
-`show()`: Mostra le informazioni del pacchetto specificato utilizzando winget e restituisce l'output come una stringa.  
-`list()`: Elenca i pacchetti installati utilizzando winget e restituisce l'output come una stringa.  
+### Methods
+`install()`: Installs the specified package using winget.  
+`search()`: Performs a search of the specified package using winget and returns the output as a string.  
+`show()`: Shows the information of the specified package using winget and returns the output as a string.  
+`list()`: Lists the installed packages using winget and returns the output as a string.  
 
-### Utilizzo
-Per utilizzare WingetManager, crea un'istanza della classe WingetManager e chiamane i vari metodi come mostrato di seguito.
+### Usage.
+To use WingetManager, create an instance of the WingetManager class and call its various methods as shown below.
 
 ```
 from winget-manager import WingetManager
 
 manager = WingetManager()
 
-# Installa un pacchetto
+# Install a package
 manager.install('<package-name>')
 
-# Cerca un pacchetto
+# search for a package
 search_results = manager.search('<package-name>')
 
-# Mostra le informazioni del pacchetto
+# show package information
 package_info = manager.show('<package-name>')
 
-# Elenca i pacchetti installati
+# List the installed packages
 installed_packages = manager.list()
 ```
